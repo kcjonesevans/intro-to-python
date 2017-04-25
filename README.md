@@ -1,8 +1,10 @@
 # Intro to Python
 
-This is the Girl Develop It Dayton Intro to Python course derived from the GDI-NYC Intro to Python course with minimal changes. Material is loosely based on Think Python by Allen B. Downey and written by Caleb Smith. 
+This is the Girl Develop It Dayton Intro to Python course derived from the [GDI-NYC](https://www.girldevelopit.com/chapters/new-york) Intro to Python course and from [John David Back](https://github.com/johndavidback) with minimal changes. Material is loosely based on Think Python by Allen B. Downey and written by Caleb Smith. 
 
 The course is meant to be taught in 2 four-hour sessions. Each of the slides and practice files are customizable according to the needs of a given class or audience.
+
+This course was taught by [Kevin Jones-Evans]() through [GDI-Dayton](). The slides can be found [here]().
 
 
 

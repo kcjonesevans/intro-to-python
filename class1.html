@@ -72,7 +72,7 @@
             <li class="fragment">Why Python?</li>
             <li class="fragment">What is programming?</li>
             <li class="fragment">Development Environment Setup</li>
-            <li class="fragment">Variables and arithmetic</li>
+            <li class="fragment">Variables and Arithmetic</li>
             <li class="fragment">Statements and Error Messages</li>
           </ul>
         </section>
@@ -182,7 +182,7 @@
 
       <section>
         <aside class="notes">25 minutes 11/12 slides</aside>
-        <h4>Command line, Python Shell, Text Editors, Notebooks</h4>
+        <h4>What We Will Need For This Class</h4>
         <table class="copy--small box">
             <tr>
                 <td style="width: 200px;"><strong>Terminal</strong></td>
@@ -195,11 +195,7 @@
             <tr>
                 <td><strong>Text Editor</strong></td>
                 <td style="padding-bottom: 20px;">A <span class="blue">program that opens text files</span> and allows the user to edit and save them. (Different than a word processor).</td>
-            </tr>
-            <tr>
-                <td><strong>Notebook (e.g. Jupyter, Zeppelin)</strong></td>
-                <td style="padding-bottom: 20px;">A <span class="blue">document containing code and text </span> and allows user to <span class="green">interactively</span> explore the results of code and simultaneously write-up findings in a reproducible workflow. (Different than a word processor).</td>
-            </tr>              
+            </tr>            
         </table>
       </section>
 
@@ -280,41 +276,6 @@ $ pwd
         </div>
       </section>
 
-      <section>
-        <aside class="notes">55(30) minutes 3/4 slides</aside>
-        <h3>The Text Editor</h3>
-        <ul class="list--tall copy--small box--small">
-            <li class="fragment">Open sublime text.</li>
-            <li class="fragment">Click "File", then "Open". Navigate to the <code>gdi-intro-python</code> <strong>folder</strong> we just created and click "Open"</li>
-            <li class="fragment">In the text editor, enter the following:
-        <pre><code contenteditable class="python" style="min-height: 50px;">
-print 'Hello World!'
-        </code></pre>
-            </li>
-            <li class="fragment">Click "File", then "Save As...". Type "class1.py" and click "Save".</li>
-            <li class="fragment">Open a terminal and navigate to the <code>gdi-intro-python</code> folder.<br/><small>If you don't already have this folder open in a terminal.</small></li>
-            <li class="fragment">Type <code>python class1.py</code></li>
-            <li class="fragment">You should see the terminal print "Hello World!"</li>
-        </ul>
-      </section>
-
-      <section>
-        <aside class="notes">55(30) minutes 4/4 slides</aside>
-        <h3>User Input</h3>
-        <p class="copy--small box--small">To obtain user input, use <code>raw_input()</code></p>
-        <p class="copy--small box--small">Change the class1.py text to the following and run it again</p>
-        <pre><code contenteditable class="python" style="min-height: 50px;">
-name = raw_input("What is your name?")
-age = raw_input("How old are you?")
-age_int = int(age)
-print "Your name is" + name + " and you are " age + " years old."
-
-type(age)
-type(age_int)
-        </code></pre>
-        <p class="copy--small box--small">The user's input is always a string. Keep that in mind when working on other problems!</p>
-      </section>
-
       <!-- Let's develop it: 10 minutes-->
       <section>
         <aside class="notes">1 hour, 5(10) minutes</aside>
@@ -333,7 +294,7 @@ type(age_int)
                 <br/><code class="copy--xsmall">[Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27", "User")</code>
             </li>
             <li>
-                Locate and run the terminal program. 
+                Locate and run the terminal program.
             </li>
             <li>
                 More setup instructions are available:
@@ -346,8 +307,14 @@ type(age_int)
       <!-- Block 2: 30 minutes -->
       <section>
         <aside class="notes">1 hour 35(30) minutes 1/6 slides</aside>
-        <h3>Let's Develop It!<br/><small><span class="blue">Working in the Python Shell</span></small></h3>
-        <p class="box--small">Open up your terminal and type <code>python</code></p>
+        <h3>Let's Develop It!<br/><small><span class="blue">Starting the Python Shell</span></small></h3>
+        <p class="box--small">Open up your terminal and type <code>python</code>!</p>
+        <p class="">You should be greeted with a message similar to: </p>
+        <div class="box--small"><pre><code contenteditable class="python" style="min-height: 50px;">
+Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 12:39:47) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+        </code></pre></div>
         <p class="fragment copy--small box--small">Follow along with the examples in the upcoming slides.<br/>Just type them right in!</p>
         <p class="fragment copy--small box--small">Feel free to explore, as well.<br/>You will not accidentally break things!</p>
       </section>
@@ -356,7 +323,7 @@ type(age_int)
       <section>
         <aside class="notes">1 hour 35(30) minutes 2/6 slides</aside>
         <h3>Variables and Arithmetic</h3>
-        <div class='box--small'><pre><code contenteditable class="python" style="min-height: 50px;">
+        <div class='box--small'><pre><code contenteditable class="terminal" style="min-height: 50px;">
 3 + 4
 2 * 4
 6 - 2
@@ -462,6 +429,40 @@ TypeError: unsupported operand type(s) for /: 'str' and 'str'
       </code></pre>
         </section>
  
+      <section>
+        <aside class="notes">55(30) minutes 3/4 slides</aside>
+        <h3>Your First Script!</h3>
+        <ul class="list--tall copy--small box--small">
+            <li class="fragment">Open your text editor.</li>
+            <li class="fragment">Click "File", then "Open". Navigate to the <code>gdi-intro-python</code> <strong>folder</strong> we just created and click "Open"</li>
+            <li class="fragment">In the text editor, enter the following:
+        <pre><code contenteditable class="python" style="min-height: 50px;">
+print 'Hello World!'
+        </code></pre>
+            </li>
+            <li class="fragment">Click "File", then "Save As...". Type "class1.py" and click "Save".</li>
+            <li class="fragment">Open a terminal and navigate to the <code>gdi-intro-python</code> folder.<br/><small>If you don't already have this folder open in a terminal.</small></li>
+            <li class="fragment">Type <code>python class1.py</code></li>
+            <li class="fragment">You should see the terminal print "Hello World!"</li>
+        </ul>
+      </section>
+
+      <section>
+        <aside class="notes">55(30) minutes 4/4 slides</aside>
+        <h3>Getting Something From Humans</h3>
+        <p class="copy--small box--small">To obtain user input, use <code>raw_input()</code></p>
+        <p class="copy--small box--small">Change the class1.py text to the following and run it again</p>
+        <pre><code contenteditable class="python" style="min-height: 50px;">
+name = raw_input("What is your name?")
+age = raw_input("How old are you?")
+age_int = int(age)
+print "Your name is " + name + " and you are " + age + " years old."
+
+type(age)
+type(age_int)
+        </code></pre>
+        <p class="copy--small box--small">The user's input is always a string. Keep that in mind when working on other problems!</p>
+      </section>
 
       <!-- STATEMENTS & ERRORS : 20 minutes-->
         <section>

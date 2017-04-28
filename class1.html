@@ -31,40 +31,12 @@
 
         <!-- Opening slide -->
         <section>
-          <img src="images/gdi_logo_badge.png" class="img--bare" height="450px" />
+          <img src="images/gdi-dayton-logo.png" class="img--bare" height="450px" />
           <div class="box--small">
             <h3><span class="green">Intro to Python Session 1</span></h3>
           </div>
         </section>
 
-
-        <!-- Welcome-->
-        <section class="hide-pdf">
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
-          <ul>
-            <li>We are here for you!</li>
-            <li>Every question is important</li>
-            <li>Help each other</li>
-            <li>Have fun!!!</li>
-          </ul>
-          </div>
-        </section>
-
-        <section>
-          <h3>Welcome!</h3>
-          <div class="left-align">
-          <p class="blue">Tell us about yourself.</p>
-          <ul>
-            <li>Who are you?</li>
-            <li>What do you hope to get out of the class?</li>
-            <li>What is your favorite or dream vacation destination?</li>
-
-          </ul>
-          </div>
-        </section>
 
         <section>
           <h3>What we will cover this morning</h3>
@@ -132,8 +104,9 @@
        <section>
         <aside class="notes">25 minutes 5/12 slides</aside>
         <h3>NOTE: Computers need simple, clear instructions</h3>
-        <img src="img/confusedrobot.jpg" alt="Confused robot"/>
-        <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/baboon/3946055/" target="_blank">baboon</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></p>
+        <img src="img/confusedrobot.jpg" style="width:75%" alt="Confused robot"/>
+        <p class="credit">
+          <small>Photo credit: <a href="http://www.flickr.com/photos/baboon/3946055/" target="_blank">baboon</a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a></small></p>
        </section>
 
         <section>
@@ -166,8 +139,10 @@
 
         <section>
           <h3>Basically, computers can be hard to work with!</h3>
-          <img src="img/computer-toddler.jpg" alt="Toddler using old word processor"/>
-          <p class="credit">Photo credit: <a href="https://flic.kr/p/5Uvapm" target="_blank">Dan Hatton</a> <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank">cc</a></p>
+          <img src="img/computer-toddler.jpg" style="width:75%" alt="Toddler using old word processor"/>
+          <p class="credit">
+            <small>Photo credit: <a href="https://flic.kr/p/5Uvapm" target="_blank">Dan Hatton</a> <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank">cc</a>
+          </small></p>
 
           <aside class="notes">Reassure the students! Coding is difficult, and it may take time to get good at it. Also, the natural state of code is broken. It's normal to have error messages, 25 minutes 9/12 slides</aside>
         </section>
@@ -176,7 +151,8 @@
         <aside class="notes">25 minutes 10/12 slides</aside>
         <h3>How does Python work?</h3>
         <img src="img/how-python-works.jpg" alt="How Python works"/>
-        <p class="credit">Photo credit: <a href="http://opensourceforgeeks.blogspot.in/2015/10/how-python-works.html" target="_blank">Open Source for Geeks</a> </p>
+        <p class="credit">
+          <small>Photo credit: <a href="http://opensourceforgeeks.blogspot.in/2015/10/how-python-works.html" target="_blank">Open Source for Geeks</a></small> </p>
         <p>If the interpreter finds code it doesn't understand, it stops running and creates an error message.</p>
        </section>
 
@@ -195,7 +171,7 @@
             <tr>
                 <td><strong>Text Editor</strong></td>
                 <td style="padding-bottom: 20px;">A <span class="blue">program that opens text files</span> and allows the user to edit and save them. (Different than a word processor).</td>
-            </tr>            
+            </tr>
         </table>
       </section>
 
@@ -217,7 +193,7 @@
             </tr>
             <tr>
                 <td><strong>All</strong></td>
-                <td style="padding-bottom: 20px;">Sublime Text, Vim, Emacs</td>
+                <td style="padding-bottom: 20px;">Sublime Text, Atom.io, Vim, Emacs</td>
             </tr>
         </table>
       </section>
@@ -251,7 +227,7 @@
                 <td><code>mkdir</code></td>
                 <td>Make directory</td>
                 <td style="padding-bottom: 20px">Creates a folder with specified name in the current folder</td>
-            </tr>                
+            </tr>
         </table>
       </section>
 
@@ -286,7 +262,7 @@ $ pwd
                 <a href="http://www.sublimetext.com/3" target="_blank">Install Sublime Text 3</a> - A text editor
             </li>
             <li>
-                <a href="http://www.python.org/download/" target="_blank">Install Python 2.7</a>
+                <a href="http://www.python.org/download/" target="_blank">Install Python 2.7.13</a>
                 <br/><small>(This step is for Windows users only. GNU/Linux and Mac OS X come with Python installed!)</small>
             </li>
             <li>
@@ -311,7 +287,7 @@ $ pwd
         <p class="box--small">Open up your terminal and type <code>python</code>!</p>
         <p class="">You should be greeted with a message similar to: </p>
         <div class="box--small"><pre><code contenteditable class="python" style="min-height: 50px;">
-Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 12:39:47) 
+Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 12:39:47)
 [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
         </code></pre></div>
@@ -428,7 +404,7 @@ File "<stdin>", line 1, in <module>
 TypeError: unsupported operand type(s) for /: 'str' and 'str'
       </code></pre>
         </section>
- 
+
       <section>
         <aside class="notes">55(30) minutes 3/4 slides</aside>
         <h3>Your First Script!</h3>
@@ -545,6 +521,21 @@ b = 10
 >> Your total with sales tax is: (total with sales tax)
 (wait for input before exiting)
           </code></pre></div>
+        </section>
+
+        <section>
+          <img src="images/gdi-dayton-logo.png" class="img--bare" height="450px" />
+          <div class="box--small">
+            <h3><span class="green">Intro to Python</span></h3>
+            <p class=""><small>@gdidayton &nbsp; | &nbsp; #GDIDAY</small></p>
+
+            <p class="copy--small box--small">
+              <a href="class1.html">Session 1</a> &nbsp; | &nbsp;
+              <a href="class2.html">Session 2</a> &nbsp; | &nbsp;
+              <a href="class3.html">Session 3</a> &nbsp; | &nbsp;
+              <a href="class4.html">Session 4</a>
+            </p>
+          </div>
         </section>
 
     </div>

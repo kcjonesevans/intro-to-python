@@ -63,10 +63,11 @@
             <p class="copy--small box--small">A named section of code that performs a specific task</p>
             <p class="copy--small box--small fragment">This is also referred to as <strong>calling</strong> a function</p>
             <div class="fragment"><p class="copy--small box--small ">We have already made a function call<br/>when using the <code>type</code>, <code>int</code>, or <code>float</code> functions</p>
-            <pre><code contenteditable class=" python small">
-a = '3'
-print type(a)
-a = float(a)
+            <pre><code contenteditable class="python small">
+>>> a = '3'
+>>> print type(a)
+&lt;type 'str'>
+>>> a = float(a)
             </code></pre></div>
         </section>
 
@@ -74,8 +75,9 @@ a = float(a)
             <aside class="notes">25 minutes 4/9 slides</aside>
             <h3>Function calls</h3>
             <pre><code contenteditable class="small python">
-a = 3
-print type(a)
+>>> a = 3
+>>> print type(a)
+&lt;type 'int'>
             </code></pre>
             <p class="copy--small box--small">A function can take <strong>arguments</strong></p>
             <p class="copy--small box--small">In the example above, the variable <code>a</code> is passed<br/>as an argument to the function <code>type</code></p>
@@ -83,8 +85,10 @@ print type(a)
             <div class="fragment "><pre><code contenteditable class="python" style="min-height: 50px;">
 # Some more function call examples
 
-int('32')
-str(32)
+>>> int('32')
+32
+>>> str(32)
+'32'
             </code></pre></div>
         </section>
 
@@ -123,21 +127,22 @@ def print_plus_5(duck):
             <aside class="notes">25 minutes 7/9 slides</aside>
             <h3>Function returns</h3>
             <p class="copy--small box--small">A function can also <strong>return</strong> a value</p>
-            <div class="copy--small box--small fragment"><p>Return allows us to save the result and use it later</p>
+            <div class="copy--small box--small fragment"><p>Return allows us to get a value from a function</p>
             <pre><code contenteditable class="python">
 # function without return
-def plus_5(x):
-    x + 5
-
-y = plus_5(4)
-print y
-
+>>> def plus_5(x):
+...     x + 5
+...
+>>> y = plus_5(4)
+>>> print y
+None
 #function with return
-def return_plus_5(x):
-    return x + 5
-
-y = return_plus_5(4)
-print y
+>>> def return_plus_5(x):
+...     return x + 5
+...
+>>> y = return_plus_5(4)
+>>> print y
+9
             </code></pre></div>
         </section>
 
@@ -146,10 +151,11 @@ print y
             <h3>Functions with no arguments</h3>
             <p class="copy--small box--small">A function does not have to take arguments,<br/>as in the following example:
             <pre><code contenteditable class="small python">
-def grass():
-    print 'The grass is green.'
-
-grass()
+>>> def grass():
+...     print 'The grass is green.'
+...
+>>> grass()
+The grass is green.
             </code></pre>
             <p class="copy--xsmall box--small ">This is useful when the function does some work but doesn't need any parameters.<br/>i.e. The function is intended to always do the same thing</p>
         </section>
@@ -159,11 +165,12 @@ grass()
             <h3>Functions with more than one argument</h3>
             <p class="copy--small box--small">A function can also take more than one argument separated by commas. For example:</p>
             <pre><code contenteditable class="small python">
-def personal_info(name, age):
-    return "My name is " + name + " and I am " + str(age) + " years old."
-
-my_information = personal_info("Amy", 26)
-print my_information
+>>> def personal_info(name, age):
+...     return "My name is " + name + " and I am " + str(age) + " years old."
+...
+>>> my_information = personal_info("Amy", 26)
+>>> print my_information
+My name is Amy and I am 26 years old.
             </code></pre>
         </section>
 
@@ -209,16 +216,19 @@ def register():
             <p class="copy--small box"><strong>Methods</strong> are also called by name but are associated with a data type.</p>
             <p class="copy--small box fragment">We have already called methods for strings and integers</p>
             <div class="fragment"><pre><code contenteditable class=" small python">
-a = 4
-name = 'caleb'
-sentence = 'the quick brown fox did the thing with the thing'
-a_list = [1, 2, 3]
+>>> a = 4
+>>> name = 'caleb'
+>>> sentence = 'the quick brown fox did the thing with the thing'
+>>> a_list = [1, 2, 3]
 
-print name.capitalize()
-print sentence.count('the')
+>>> print name.capitalize()
+Caleb
+>>> print sentence.count('the')
+3
 
-a_list.append(4)
-print a_list
+>>> a_list.append(4)
+>>> print a_list
+[1, 2, 3, 4]
             </code></pre></div>
         </section>
 
@@ -230,13 +240,15 @@ print a_list
             <p class="box--small copy--small">The <code>in</code> operator is used to determine if<br/>an element is in a given data type</p>
             <div class="fragment"><p class="box--small copy--small ">For dictionaries, the keys are searched for the element.</p>
             <pre><code contenteditable class="small python">
-color = [255, 255, 0]
-if 0 in color:
-    print '0 is in the color'
-
-menu = {'tofu': 4}
-print 'tofu' in menu
-print 4 in menu
+>>> color = [255, 255, 0]
+>>> if 0 in color:
+...     print '0 is in the color'
+0 is in the color
+>>> menu = {'tofu': 4}
+>>> print 'tofu' in menu
+True
+>>> print 4 in menu
+False
             </code></pre></div>
         </section>
 
@@ -269,18 +281,24 @@ print 4 in menu
             <h3>Examples of using Builtins</h3>
             <pre><code contenteditable class="python">
 # Using len() - Determines length
-print len([1, 2])
-print len("Hello")
+>>> print len([1, 2])
+2
+>>> print len("Hello")
+5
 
 # range() - Quickly creates a list of integers
-print range(5)
-print range(5, 10)
-print range(0, 10, 2)
+>>> print range(5)
+[0, 1, 2, 3, 4]
+>>> print range(5, 10)
+[5, 6, 7, 8, 9]
+>>> print range(0, 10, 2)
+[0, 2, 4, 6, 8]
 
 # sorted() - Sort a given list
-grades = [93, 100, 60]
-grades = sorted(grades)
-print grades
+>>> grades = [93, 100, 60]
+>>> grades = sorted(grades)
+>>> print grades
+[60, 93, 100]
             </code></pre>
         </section>
 
@@ -288,13 +306,18 @@ print grades
             <aside class="notes">1 hour 20(15) minutes 4/4 slides</aside>
             <h3>String Formatting Operators</h3>
             <pre><code contenteditable class="python">
-print 'To Do:'
-to_dos = ['work', 'sleep', 'work']
-for item in to_dos:
-    print '%s' %(item)
-
-name = 'Sally'
-print 'Her name is {}'.format(name)
+>>> print 'To Do:'
+To Do:
+>>> to_dos = ['work', 'sleep', 'work']
+>>> for item in to_dos:
+...     print '%s' %(item)
+...
+work
+sleep
+work
+>>> name = 'Sally'
+>>> print 'Her name is {}'.format(name)
+Her name is Sally
             </code></pre>
         </section>
 

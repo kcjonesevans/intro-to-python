@@ -1,6 +1,6 @@
 def guess_number():
     secret_number = 55
-    guess = ("Guess a number from 1 to 100")
+    guess = raw_input("Guess a number from 1 to 100")
     guess = int(guess)
 
     if abs(secret_number - guess) > 50:
